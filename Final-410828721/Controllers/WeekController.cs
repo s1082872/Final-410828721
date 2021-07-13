@@ -9,12 +9,12 @@ namespace Final_410828721.Controllers
     public class WeekController : Controller
     {
         // GET: Week
-        public ActionResult Index(float? number)
+        public ActionResult Index(string number)
         {
             var result = "";
-            if (number.Value = 1)
+            if (number = "1")
             {
-                result = 星期一;
+                result = "星期一";
             }
 
             ViewBag.Result = result;
